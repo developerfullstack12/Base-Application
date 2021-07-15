@@ -1,0 +1,202 @@
+{
+	"REQUIRED": {
+		"success": false,
+		"message": "Missing one or more required parameter."
+	},
+	"INVALID": {
+		"success": false,
+		"message": "Sorry! Incorrect username or password"
+	},
+	"WRONG": {
+		"success": false,
+		"message": "Something went wrong"
+	},
+	"REGISTERED": {
+		"success": true,
+		"message": "Registered successfully, Thank you."
+	},
+	"FOUND": "Records found",
+	"ALREADEY_REGISTERED": {
+		"success": false,
+		"message": "You are already registered, please login."
+	},
+	"JOB_POST": {
+		"success": true,
+		"message": "New job created successfully."
+	},
+	"UPDATED": {
+		"success": true,
+		"message": "Record updated successfully."
+	},
+	"NOT_FOUND": {
+		"success": false,
+		"message": "Sorry! Record not found"
+	},
+	"SAVED": {
+		"success": true,
+		"message": "Record saved successfully."
+	},
+	"DELETED": {
+		"success": true,
+		"message": "Record deleted successfully."
+	},
+	"LOGIN_SUCCESSFULLY": {
+		"success": true,
+		"message": "Login Successfully."
+	},
+	"CHECK_CHECKBOX": {
+		"success": false,
+		"message": "Please indicate that you have read and agree to the Terms and Conditions of Privacy Policy."
+	},
+	"IMAGE_UPLOADED": {
+		"success": true,
+		"message": "Image Uploaded successfully"
+	},
+	"IMAGE_UPLOAD_FAIL": {
+		"success": false,
+		"message": "Please select the file in JPEG or JPG,TIFF,PNG formats only "
+	},
+	"VIDEO_UPLOADED": {
+		"success": true,
+		"message": "Video Uploaded successfully"
+	},
+	"VIDEO_UPLOAD_FAIL": {
+		"success": false,
+		"message": "Please select the file in MP4,MPG,AVI formats only and size of video should be less than 20mb"
+	},
+	"INVALID_EMAIL": {
+		"success": false,
+		"message": "Please enter valid email ID."
+	},
+	"PASSWORD_LENGTH": {
+		"success": false,
+		"message": "Password must be of 6 character."
+	},
+	"USER_DELETE": {
+		"success": true,
+		"message": "User deleted successfully."
+	},
+	"SERVER_ERROR": {
+		"success": false,
+		"message": "Server error, please try agian later."
+	},
+	"MOBILE_NUMBER": {
+		"success": false,
+		"message": "Please enter valid mobile number."
+	},
+	"INVALID_OTP": {
+		"success": false,
+		"message": "Please enter correct OTP."
+	},
+	"NOTIFICATION": {
+		"success": true,
+		"message": "You have some new notificatons."
+	},
+	"LOGOUT": {
+		"success": true,
+		"message": "You have successfully logout."
+	},
+	"PASSWORD_MISMATCH": {
+		"success": false,
+		"message": "Password mismatch, please enter password again."
+	},
+	"ALREADEY_CONTACT": {
+		"success": false,
+		"message": "Sorry! Contact number already exists."
+	},
+	"ALREADEY_EMAIL": {
+		"success": false,
+		"message": "Sorry! Email already exists."
+	},
+	"OTP_SEND": {
+		"success": true,
+		"message": "Please verify your OTP."
+	},
+	"OTP_NOT_SEND": {
+		"success": false,
+		"message": "Sorry unable to send OTP."
+	},
+	"VALIDATED": {
+		"success": true,
+		"message": "User validated successfully."
+	},
+	"POST_SUCCESSFUL": {
+		"success": true,
+		"message": "Successfully posted."
+	},
+	"POST_UNSUCCESS": {
+		"success": false,
+		"message": "Your file is not posted, please try again later."
+	},
+	"APPLIED_JOB": {
+		"success": true,
+		"message": "You successfully applied for this Job."
+	},
+	"WITHDRAWAL_JOB": {
+		"success": true,
+		"message": "Your withdrawal from this Job."
+	},
+	"JOB_SKIP": {
+		"success": true,
+		"message": "You skip this job."
+	},
+	"JOB_SAVE": {
+		"success": true,
+		"message": "Job saved."
+	},
+	"JOB_DELETE": {
+		"success": true,
+		"message": "You deleted this Job."
+	},
+	"SHORTLISTED_JOB": {
+		"success": true,
+		"message": "Your profile has been shortlisted for this job."
+	},
+	"SELECTED_JOB": {
+		"success": true,
+		"message": "You are selected for this job."
+	},
+	"NEW_JOB_ALERT": {
+		"success": true,
+		"message": "New jobs are available."
+	},
+	"UPADATE_RESUME": {
+		"success": true,
+		"message": "Update your resume."
+	},
+	"UPDATE_PROFILE": {
+		"success": true,
+		"message": "Update your profile for better experience."
+	},
+	"INTERVIEW_SCHEDULED": {
+		"success": true,
+		"message": "Interview scheduled successfully."
+	},
+	"USER_CREATED": {
+		"success": true,
+		"message": "User created successfully."
+	},
+	"UNAUTHORIZED": {
+		"success": false,
+		"message": "Authentication failed."
+	},
+	"STATUS_PROCESSING" : 102,
+    "STATUS_OK" : 200,
+    "STATUS_CREATED" : 201,
+    "STATUS_ACCEPTED" : 202,
+    "STATUS_MOVED_TEMPORARILY" : 302,
+    "STATUS_NOT_MODIFIED" : 304,
+    "STATUS_BAD_REQUEST" : 400,
+    "STATUS_UNAUTHORIZED" : 401,
+    "STATUS_PAYMENT_REQUIRED" : 402,
+    "STATUS_FORBIDDEN" : 403,
+    "STATUS_NOT_FOUND" : 404,
+    "STATUS_METHOD_NOT_ALLOWED" : 405,
+    "STATUS_INTERNAL_SERVER_ERROR" : 500,
+    "STATUS_NOT_IMPLEMENTED" : 501,
+    "STATUS_BAD_GATEWAY" : 502,
+    "STATUS_SERVICE_UNAVAILABLE" : 503,
+    "STATUS_GATEWAY_TIMEOUT" : 504,
+    "STATUS_HTTP_VERSION_NOT_SUPPORTED" : 505,
+    "STATUS_NETWORK_AUTHENTICATION_REQUIRED" : 511
+}
