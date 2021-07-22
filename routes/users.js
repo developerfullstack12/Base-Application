@@ -1,6 +1,5 @@
 var express = require('express');
 var bcrypt = require('bcrypt');
-// var { USER_MSG, COMMON, AUTH, found, err, update, status } = require('../shared/messages');
 var { deleteFile, getRandomInt, calculateAge, sendOTP } = require('../shared/functions');
 var { User } = require('../Modal/Users');
 const multer = require('multer');
@@ -75,7 +74,6 @@ router.get('/all', async (req, res) => {
       delete res.__('FOUND').count;
     }
   } catch (error) {
-    // console.log(";;;;", error);
     return res.status(status.INTERNAL_SERVER_ERROR).json(res.__('WRONG'));
   }
 });
@@ -131,7 +129,6 @@ router.get('/creator', async (req, res) => {
  * Updated At : 04/01/2021
  */
 router.put('/', profilePic, async (req, res) => {
-  // return res.json(new Date("2021-01-16"))
   if (!req.body._id) {
     return res.status(status.BAD_REQUEST).json(res.__("REQUIRED"));
   }
@@ -275,21 +272,14 @@ router.post('/verify', async (req, res) => {
     let data = await User.findOneAndUpdate({ contact: req.body.contact, role: 0 }, { token: random }, { new: true });
     if (data) {
       try {
-        console.log("######req.body.contact, random########",req.body.contact, random);
         sendOTP(req.body.contact, random);
         
       } catch (error) {
-        console.log(";;;;#########=>",error);
       }
       setTimeout(async () => {
         await User.findOneAndUpdate({ contact: req.body.contact, role: 0 }, { token: null });
       }, 30 * 60 * 1000);
-   
 
-      //if (!isSend) {
-      //  return res.json(res.__("OTP_NOT_SEND"));
-      // }
-      
       return res.json(res.__("OTP_SEND"));
     } else {
       
