@@ -22,7 +22,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+const db = require("./Modal");
+ db.sequelize.sync();
 
+ //For restructured db
+// db.sequelize.sync({ force: true }).then(() => {
+//   console.log("Drop and re-sync db.");
+// });
 
 //Locals setup
 const i18n = new I18n({
@@ -32,9 +38,7 @@ const i18n = new I18n({
 })
 app.use(i18n.init)
 
-//Set up default mongoose connection
-var mongoDB = `mongodb://${process.env.DB_URL}/${process.env.DB_NAME}`; 
-mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 
 
@@ -51,7 +55,7 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error pages
+  // render the error page
   res.status(err.status || 500);
   res.render('error');
 });

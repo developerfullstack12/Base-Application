@@ -120,50 +120,6 @@
 		"success": true,
 		"message": "User validated successfully."
 	},
-	"POST_SUCCESSFUL": {
-		"success": true,
-		"message": "Successfully posted."
-	},
-	"POST_UNSUCCESS": {
-		"success": false,
-		"message": "Your file is not posted, please try again later."
-	},
-	"APPLIED_JOB": {
-		"success": true,
-		"message": "You successfully applied for this Job."
-	},
-	"WITHDRAWAL_JOB": {
-		"success": true,
-		"message": "Your withdrawal from this Job."
-	},
-	"JOB_SKIP": {
-		"success": true,
-		"message": "You skip this job."
-	},
-	"JOB_SAVE": {
-		"success": true,
-		"message": "Job saved."
-	},
-	"JOB_DELETE": {
-		"success": true,
-		"message": "You deleted this Job."
-	},
-	"SHORTLISTED_JOB": {
-		"success": true,
-		"message": "Your profile has been shortlisted for this job."
-	},
-	"SELECTED_JOB": {
-		"success": true,
-		"message": "You are selected for this job."
-	},
-	"NEW_JOB_ALERT": {
-		"success": true,
-		"message": "New jobs are available."
-	},
-	"UPADATE_RESUME": {
-		"success": true,
-		"message": "Update your resume."
-	},
 	"UPDATE_PROFILE": {
 		"success": true,
 		"message": "Update your profile for better experience."
